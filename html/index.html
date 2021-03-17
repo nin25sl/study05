@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>レジ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>レジ機能</h2>
+    <h3>商品リスト</h3>
+    <div class = "container">
+        <table id = "itemlist" class = "table">
+            <thead>
+                <tr>
+                    <th scope = "col">アイテムコード</th>
+                    <th scope = "col">商品名</th>
+                    <th scope = "col">値段</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <h3>注文リスト</h3>
+    <div class="regi_button">
+        <p>コード：<input name = "order_code" type="text">　　個数：<input name = "order_dev" type="text">  <button id = "order">カゴに入れる</button></p>
+    </div>
+    <div class = "container">
+        <table id = "orderlist" class = "table">
+            <thead>
+                <tr>
+                    <th scope = "col">アイテムコード</th>
+                    <th scope = "col">商品名</th>
+                    <th scope = "col">値段</th>
+                    <th scope = "col">個数</th>
+                    <th scope = "col">合計金額</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <p><button class = "order_calcurate">レジ操作</button>  <button class = "order_delete">再試行</button></p>
+    <p class = "calcurate_result">合計金額：</p>
+    <p>支払い金額：<input class = "allowwance_price" type="text">  <button class = "allowwance">支払い</button></p>
+    <h3>買い物結果</h3>
+    <p class = "back_result">お釣り：</p>
+    <p class = "recept">レシートファイル</p>
+    <button class = "re">再度買い物を行う</button>
+    <script type="text/javascript" src="./eel.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

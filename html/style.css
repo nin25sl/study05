@@ -1,0 +1,17 @@
+body {
+    margin: 0px 20px ;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    margin-top:10px;
+    font-size:20px;
+    border-bottom:solid 1px black;
+}
+
+.regi_button {
+    text-align:center;
+}
